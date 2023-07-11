@@ -48,12 +48,15 @@ def quiz_program_run():
             print("That is correct!")
             score += 1
             print("Your score is: " + str(score) + "/" + str(len(quiz_questions_answers)))
+            print("\n")
         else:
             print("That is incorrect, sorry!")
             print("The correct answer is: " + value['answer'])
             print("Your score is: " + str(score) + "/" + str(len(quiz_questions_answers)))
+            print("\n")
 
-    print("Congratulations! You have finished this quiz!")
+    print("You have finished this quiz! Your final score is " + str(score) + "/" + str(len(quiz_questions_answers)))
+    print("Your percentage score is " + str((score/7 * 100).__round__()) + "%")
 
 
 quiz_program_run()
